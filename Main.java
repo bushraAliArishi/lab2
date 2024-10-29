@@ -29,9 +29,8 @@ public static void main(String[] args) {
     System.out.println("********************************************************");
 
     int[] numArrayQuestion2 = {1, 1, 1, 3, 3, 5};
-    System.out.print("Enter a number to search for its occurrences (or 000 to exit) ");
-    int target = input.nextInt();
-    countOccurrences(numArrayQuestion2,target);
+
+    countOccurrences(numArrayQuestion2);
     System.out.println();
     System.out.println();
     System.out.println("********************************************************");
@@ -107,11 +106,11 @@ public static ArrayList<String> longestWords(ArrayList<String> wrodsArray) {
 
     return longWordArray;
 }
-public static void countOccurrences(int[] array,int target) {
+public static void countOccurrences(int[] array) {
     Scanner input = new Scanner(System.in);
     while (true) {
         System.out.print("Enter a number to search for its occurrences (or 000 to exit): ");
-        target = input.nextInt();
+       int target = input.nextInt();
         if (target == 000) {
             break;
         }
